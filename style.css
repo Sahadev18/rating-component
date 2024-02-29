@@ -1,0 +1,128 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: #212832;
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --light: 400;
+    --dark: 700;
+}
+
+body{
+    height: 97vh;
+    font-family: "Overpass", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--very-dark-blue);
+    color: var(--white);
+}
+
+#container{
+    background: var(--dark-blue);
+    width: 340px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+#star-icon{
+    background: #262F37;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    background:#262F37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    color: var(--light-grey);
+    font-weight: var(--dark);
+}
+
+li:hover{
+    color: var(--white);
+    background: var(--light-grey);
+}
+
+button{
+    width: 100%;
+    background: var(--orange);
+    border: none;
+    height: 2.5rem;
+    border-radius: 10rem;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight:var(--dark);
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--orange);
+    background:var(--white);
+}
+
+p{
+    font-size: 15px;
+    color: var(--medium-grey);
+    line-height: 1.5rem;
+    margin-top: 0;
+    font-weight: var(--dark)
+}
+h1{
+    margin-bottom: 0.5rem;
+}
+
+#thank-you{
+    position: absolute;
+    width: 355px;
+    background: var(--dark-blue);
+    padding: 2.5rem 1.5rem; 
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#display-rating{
+    color: var(--orange);
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background:#262F37;
+    font-weight: var(--light);
+}
+
+.select{
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.disabled:hover {
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+
+@media (max-width:455px){
+    #container,#thank-you{
+        width: 80%;
+    }
+}
